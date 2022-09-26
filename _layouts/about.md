@@ -52,6 +52,8 @@ layout: default
   </div>
 </div>
 
+  <div class="row">
+    <div class="col-md-12">
 <mini-profile>
   <header>
     <iframe src="https://scapes.punkscape.xyz/?simple&autoplay&autoscale=false&chapter-switch=false&sound-control=false#8386" frameborder="0" tabindex="-1"></iframe>
@@ -75,7 +77,7 @@ layout: default
     </ul>
   </section>
 </mini-profile>
-
+      </div></div>
 <style>
 
 :root {
