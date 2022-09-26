@@ -77,6 +77,7 @@ layout: default
 </mini-profile>
 
 <style>
+
 :root {
   --box-padding: 1.5rem;
 
@@ -92,6 +93,8 @@ layout: default
   --border: 3px solid rgb(20 15 25);
   --border-dark: 3px solid var(--dark-bg);
 }
+
+
 mini-profile {
   background-color: var(--dark-bg);
   color: white;
@@ -136,7 +139,7 @@ mini-profile h1 {
 
 mini-profile p {
   opacity: 0.8;
-  font-size: 0.8rem;
+/*   font-size: 0.8rem; */
 }
 
 mini-profile ul {
@@ -145,6 +148,12 @@ mini-profile ul {
   gap: 1rem;
   margin: 1rem 0 0;
   list-style: none;
+}
+
+mini-profile a:hover,
+mini-profile a:focus,
+mini-profile a:active {
+  background-color: var(--action-active);
 }
 
 mini-profile a {
@@ -157,15 +166,18 @@ mini-profile a {
   font-style: italic;
   font-weight: bold;
   font-size: 0.8rem;
-  background-color: var(--action-active);
+/*   background-color: var(--action-active); */
   text-decoration: none;
+  color:white;
 }
 
 @media (min-width: 40.5rem) {
   :has(mini-profile) {
     display: flex;
-    align-items: center;
-    background-color: var(--black);
+/*     align-items: center; */
+/*     background-color: var(--black); */
+    align-content: center;
+    justify-content: left;
   }
 
   mini-profile {
@@ -177,7 +189,7 @@ mini-profile a {
 /*     animation: gradient 5s infinite alternate; */
   }
 
-  header img:nth-child(2) {
+  mini-profile img:nth-child(2) {
     max-width: 10rem;
   }
 }
