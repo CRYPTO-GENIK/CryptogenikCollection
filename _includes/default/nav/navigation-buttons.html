@@ -7,7 +7,8 @@
 {%- include multi_lng/get-pages-by-lng.liquid pages = site.html_pages -%}
 
 {%- comment %} get blog page {% endcomment -%}
-{%- assign blogpage =  site.html_pages | where_exp: "item", "item.layout == 'nft-list'" -%}
+{%- assign blogpage =  site.html_pages | where_exp: "item", "item.layout == 'post-list'" -%}
+{%- assign collectionpage =  site.html_pages | where_exp: "item", "item.layout == 'nft-list'" -%}
 
 {%- for tmp_page in blogpage -%}
   {%- include multi_lng/get-lng-by-url.liquid url = tmp_page.url -%}
