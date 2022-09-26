@@ -169,8 +169,8 @@ mini-profile a {
   font-weight: bold;
   font-size: 0.8rem;
 /*   background-color: var(--action-active); */
-  text-decoration: none;
-  color:white;
+  text-decoration: none !important;
+  color:white !important;
 }
 
 @media (min-width: 40.5rem) {
@@ -181,6 +181,7 @@ mini-profile a {
     align-content: center;
     justify-content: left;
   flex-wrap: wrap;
+  width:100%;
   }
 
   mini-profile {
