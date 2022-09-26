@@ -51,3 +51,151 @@ layout: default
     </div>
   </div>
 </div>
+
+<main>
+  <header>
+    <iframe src="https://scapes.punkscape.xyz/?simple&autoplay&autoscale=false&chapter-switch=false&sound-control=false#8386" frameborder="0" tabindex="-1"></iframe>
+    <img src="https://pbs.twimg.com/profile_images/1506309513745469440/d-srpQ3S_400x400.jpg" alt="Cryptogenik">
+  </header>
+
+  <section>
+    <h1>Cryptogenik.eth</h1>
+    <p>If you build it - they will come</p>
+
+    <ul>
+      <li>
+        <a href="#">Mail</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/Cryptogenik" target="_blank">Twitter</a>
+      </li>
+      <li>
+        <a href="https://github.com/" target="_blank">Github</a>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<style>
+
+:root {
+  --box-padding: 1.5rem;
+
+  /* Colors */
+  --black: black;
+  --dark-bg: rgb(14 11 18);
+  --primary: #ae44d5;
+  --action: rgb(58 50 86 / 40%);
+  --action-active: rgb(58 50 86 / 80%);
+
+  /* Borders */
+  --border-radius: 0.5rem;
+  --border: 3px solid rgb(20 15 25);
+  --border-dark: 3px solid var(--dark-bg);
+}
+main {
+  max-width: 40.5rem;
+  overflow: hidden;
+}
+
+header {
+  background-color: var(--black);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-bottom: var(--border);
+}
+
+header iframe {
+  width: 40.5rem;
+  height: calc(40.5rem / 3);
+}
+
+header img:nth-child(2) {
+  border-radius: 50%;
+  border: var(--border-dark);
+  max-width: 30vw;
+
+  position: absolute;
+  bottom: -2rem;
+  left: var(--box-padding);
+}
+
+section {
+  padding: 2.25rem var(--box-padding) var(--box-padding);
+}
+
+h1 {
+  color: var(--primary);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+}
+
+p {
+  opacity: 0.8;
+  font-size: 0.8rem;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0 0;
+}
+
+ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  background-color: var(--action);
+  border-radius: var(--border-radius);
+  transition: background .4s;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+ul li a:hover,
+ul li a:focus,
+ul li a:active {
+  background-color: var(--action-active);
+}
+
+@media (min-width: 40.5rem) {
+  body {
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+  }
+
+  main {
+    background-color: var(--dark-bg);
+    margin: 2rem auto 4rem;
+    border: var(--border);
+    border-radius: var(--border-radius);
+/*     box-shadow: 0 0.25rem 3rem 2rem rgb(95 45 145 / 9%); */
+/*     animation: gradient 5s infinite alternate; */
+  }
+
+  header img:nth-child(2) {
+    max-width: 10rem;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    box-shadow: 0 0.25rem 3rem 2rem rgb(95 45 145 / 9%);
+  }
+  50% {
+/*     box-shadow: -0.5rem -0.5rem 3rem 2rem rgb(100 45 130 / 19%); */
+    box-shadow: -5px 4px 5px 3rem #00000039,0 0 5px #26bdff,0 0 5px .3rem #1ab3f6,0 0 10px .3rem #6b4eff,0 0 20px .5rem #cd5c5c;
+  }
+  100% {
+/*     box-shadow: 1rem 1.45rem 5rem 3.9rem rgb(95 45 170 / 13%); */
+    box-shadow: -5px 4px 5px #00000039,0 0 5px #26bdff,0 0 5px #1ab3f6,0 0 10px #6b4eff,0 0 20px #cd5c5c;
+  }
+}
+
+
+</style>
