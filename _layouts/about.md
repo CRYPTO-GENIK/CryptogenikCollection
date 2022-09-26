@@ -52,7 +52,7 @@ layout: default
   </div>
 </div>
 
-<main>
+<mini-profile>
   <header>
     <iframe src="https://scapes.punkscape.xyz/?simple&autoplay&autoscale=false&chapter-switch=false&sound-control=false#8386" frameborder="0" tabindex="-1"></iframe>
     <img src="https://pbs.twimg.com/profile_images/1506309513745469440/d-srpQ3S_400x400.jpg" alt="Cryptogenik">
@@ -74,10 +74,9 @@ layout: default
       </li>
     </ul>
   </section>
-</main>
+</mini-profile>
 
 <style>
-
 :root {
   --box-padding: 1.5rem;
 
@@ -93,12 +92,14 @@ layout: default
   --border: 3px solid rgb(20 15 25);
   --border-dark: 3px solid var(--dark-bg);
 }
-main {
+mini-profile {
+  background-color: var(--dark-bg);
+  color: white;
   max-width: 40.5rem;
   overflow: hidden;
 }
 
-header {
+mini-profile header {
   background-color: var(--black);
   position: relative;
   display: flex;
@@ -106,12 +107,12 @@ header {
   border-bottom: var(--border);
 }
 
-header iframe {
+mini-profile iframe {
   width: 40.5rem;
   height: calc(40.5rem / 3);
 }
 
-header img:nth-child(2) {
+mini-profile img:nth-child(2) {
   border-radius: 50%;
   border: var(--border-dark);
   max-width: 30vw;
@@ -121,11 +122,11 @@ header img:nth-child(2) {
   left: var(--box-padding);
 }
 
-section {
+mini-profile section {
   padding: 2.25rem var(--box-padding) var(--box-padding);
 }
 
-h1 {
+mini-profile h1 {
   color: var(--primary);
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -133,19 +134,20 @@ h1 {
   font-weight: 700;
 }
 
-p {
+mini-profile p {
   opacity: 0.8;
   font-size: 0.8rem;
 }
 
-ul {
+mini-profile ul {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin: 1rem 0 0;
+  list-style: none;
 }
 
-ul li a {
+mini-profile a {
   display: block;
   padding: 0.5rem 1rem;
   background-color: var(--action);
@@ -155,21 +157,18 @@ ul li a {
   font-style: italic;
   font-weight: bold;
   font-size: 0.8rem;
-}
-ul li a:hover,
-ul li a:focus,
-ul li a:active {
   background-color: var(--action-active);
+  text-decoration: none;
 }
 
 @media (min-width: 40.5rem) {
-  body {
+  :has(mini-profile) {
     display: flex;
     align-items: center;
     background-color: var(--black);
   }
 
-  main {
+  mini-profile {
     background-color: var(--dark-bg);
     margin: 2rem auto 4rem;
     border: var(--border);
