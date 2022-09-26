@@ -180,6 +180,7 @@ mini-profile a {
 /*     background-color: var(--black); */
     align-content: center;
     justify-content: left;
+  flex-wrap: wrap;
   }
 
   mini-profile {
